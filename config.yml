@@ -47,9 +47,9 @@ languages:
         - name: About
           url: page/about/
           weight: 2
-        - name: Contact
-          url: contact
-          weight: 3
+        # - name: Contact
+        #   url: contact
+        #   weight: 3
 
 params:
   darkModeToggle: true
