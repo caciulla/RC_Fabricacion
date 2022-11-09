@@ -1,0 +1,91 @@
+baseurl: ""
+metaDataFormat: yaml
+title: RC Fabricación
+theme: "blist"
+DefaultContentLanguage: en
+DefaultContentLanguageInSubdir: true
+languages:
+  en:
+    contentDir: content/en
+    weight: 1
+    languageName: English
+    params:
+      introTitle: RC Fabricación de Cabañas
+      introSubtitle: >-
+        Custom made cabañas by Pablo Robledo 
+      introPhoto: /picture.jpeg
+      logo: /logoRed.png
+    menu:
+      main:
+        - name: Blog
+          url: blog
+          weight: 1
+        - name: About
+          url: page/about/
+          weight: 2
+        - name: Contact
+          url: contact
+          weight: 3
+  
+  es:
+    contentDir: content/es
+    weight: 2
+    languageName: Español
+    title: RC Fabricación
+    description: Cabañas hechas a la medida
+    params:
+      introTitle: RC Fabricación de Cabañas
+      introSubtitle: >-
+        Cabañas hechas a la medida
+      introPhoto: /picture.jpeg
+      logo: /logoRed.png
+    menu:
+      main:
+        - name: Blog
+          url: blog
+          weight: 1
+        - name: About
+          url: page/about/
+          weight: 2
+        - name: Contact
+          url: contact
+          weight: 3
+
+params:
+  darkModeToggle: true
+  enableSearch: false
+  copyright: Copyright © 2022 - Pablo Robledo · All rights reserved
+  favicon: /favicon.svg
+  ascentColor: bg-blue-100
+  frontBundle: blog
+  hideMeta: false
+  hideOtherLanguages: true
+  homepage:
+    social:
+      title: Contact
+      description: "Pablo Robledo +52 646 161 7397"
+      twitter: 'https://twitter.com/'
+      linkedin: 'https://linkedin.com/in/'
+      xing: 'https://www.xing.com/profile/'
+      github: 'https://github.com/'
+      medium: 'https://medium.com/'
+      reddit: 'https://reddit.com/'
+      dribbble: 'https://dribbble.com/'
+      stackoverflow: 'https://stackoverflow.com/'
+menu:
+  main:
+    - name: About
+      url: url/en/page/about
+build:
+  writeStats: true
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+markup:
+  highlight:
+    style: dracula
+  goldmark:
+    renderer:
+      unsafe: true
